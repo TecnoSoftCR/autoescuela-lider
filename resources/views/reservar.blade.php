@@ -6,7 +6,7 @@
         <div class="signal-image-two" data-parallax='{"x": 30}'><img src="{{ asset('images/resource/image-2.png')}}" alt=""></div>
         <div class="auto-container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="content-block">
                         <div class="sec-title light mb-30">
                             <div class="sub-title">Inscríbete en tus clases hoy</div>
@@ -21,27 +21,39 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="consult-form">
-                        <h3 class="mb-3">Reserva tus clases</h3>
+                        <h3 class="mb-3">Reserva tu clase</h3>
                         <form action="#" class="">
                             <div class="row">
-                                <div class="form-group col-md-6">
+                                @php
+                                    $date = date('Y-m-d');
+                                @endphp
+
+                                <div class="form-group col-md-12 mb-3">
+                                    <input type="date" name="fecha" id="fecha" value="{{$date}}">
+                                </div>
+
+                                <div class="form-group col-md-5 mb-3">
+                                    <input placeholder="Cédula" type="text">
+                                </div>
+
+                                <div class="form-group col-md-7 mb-3">
                                     <input placeholder="Nombre" type="text">
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <input placeholder="Apellido" type="text">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input placeholder="Correo" type="email">
-                                </div>
-                                <div class="form-group col-md-6">
+
+                                <div class="form-group col-md-5 mb-3">
                                     <input placeholder="Teléfono" type="text">
                                 </div>
-                                <div class="form-group col-md-12">
+
+                                <div class="form-group col-md-7 mb-3">
+                                    <input placeholder="Correo" type="email">
+                                </div>
+
+                                <div class="form-group col-md-12 mb-3">
                                     <input placeholder="Paquete de interes" type="text">
                                 </div>
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-12 mb-3">
                                     <textarea name="form_message" placeholder="Detalle"></textarea>
                                 </div>
                                 <div class="form-group col-md-12">

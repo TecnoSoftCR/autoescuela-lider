@@ -177,7 +177,7 @@
                                 <div class="text">Ser la institución líder y referente nacional en educación vial en Costa Rica, destacándonos por nuestra innovación, la expansión de nuestros planteles y la calidad de nuestros servicios.</div>
                             </div>
                         </div>
-                        <div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Ver planes </span></a></div>
+                        <div class="link-btn"><a href="#planes" class="theme-btn btn-style-one style-three"><span>Ver planes </span></a></div>
                     </div>
                 </div>
             </div>
@@ -236,10 +236,10 @@
 
             </div>
         </div>
-    </section> --}}
+    </section>--}}
 
     <!-- Info form section -->
-    {{-- <section class="info-form-section" style="background-image: url({{ asset('images/background/bg-2.jpg')}});">
+    {{--<section class="info-form-section" style="background-image: url({{ asset('images/background/bg-2.jpg')}});">
         <div class="signal-image-one" data-parallax='{"x": -30}'><img src="{{ asset('images/resource/image-1.png')}}" alt=""></div>
         <div class="signal-image-two" data-parallax='{"x": 30}'><img src="{{ asset('images/resource/image-2.png')}}" alt=""></div>
         <div class="auto-container">
@@ -293,10 +293,10 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>--}}
 
     <!-- Working Process section -->
-    {{-- <section class="working-process-section">
+    {{--<section class="working-process-section">
         <div class="background-icon"><img src="{{ asset('images/icons/icon-12.png')}}" alt=""></div>
         <div class="auto-container">
             <div class="top-content">
@@ -344,7 +344,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>--}}
 
     <!-- CTA section -->
     {{-- <section class="cta-section" style="background-image: url({{ asset('images/background/bg-4.jpg')}});">
@@ -359,7 +359,7 @@
     </section> --}}
 
     <!-- Testimonials section -->
-    {{-- <section class="testimonials-section">
+    {{--<section class="testimonials-section">
         <div class="sec-bg" style="background-image: url({{ asset('images/background/bg-5.jpg')}});"></div>
         <div class="auto-container">
             <div class="top-content">
@@ -373,11 +373,11 @@
                 <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "center": false, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" } , "992":{ "items" : "1" }, "1200":{ "items" : "2" }}}'>
                     <div class="col-lg-12 testimonial-block">
                         <div class="inner-box">
-                            <div class="author-info">
+                            <!--<div class="author-info">
                                 <div class="thumb"><img src="{{ asset('images/resource/author-2.jpg')}}" alt=""></div>
                                 <h4>James Thomas</h4>
                                 <div class="location">California, USA</div>
-                            </div>
+                            </div>-->
                             <div class="content">
                                 <div class="rating-info">
                                     <h5>Earned Driving License</h5>
@@ -514,63 +514,72 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>--}}
 
     <!-- Blog Section -->
-    {{-- <section class="blog-section">
+    <section class="blog-section" id="planes">
         <div class="auto-container">
             <div class="top-content row m-0 justify-content-between align-items-center">
                 <div class="sec-title">
-                    <div class="sub-title">instructors help you succeed </div>
-                    <h2>Drivega Driving School <br> - News & Updates</h2>
+                    <div class="sub-title">Nuestros planes</div>
+                    <h2>Auto Escuela Líder</h2>
                 </div>
-                <div class="text">Our training courses help people of all ages to acquire <br> licensed the experience aute irure dolor incly reprehend <br> erit cepteur sint cat cupidatat non proident.  </div>
+                <div class="text">En nuestra escuela de manejo ofrecemos planes diseñados para adaptarse <br>
+                a cada tipo de estudiante, desde principiantes hasta personas que desean <br>
+                perfeccionar su conducción antes del examen práctico.</div>
             </div>
             <div class="row">
                 <div class="col-lg-4 news-block">
                     <div class="inner-box">
-                        <div class="image"><img src="{{ asset('images/resource/news-1.jpg')}}" alt=""></div>
+                        <div class="image"><img src="{{ asset('images/plan1.jpg')}}" alt=""></div> <!-- images/resource/news-1.jpg -->
                         <div class="lower-content">
-                            <div class="post-meta-info">
+                            {{--<div class="post-meta-info">
                                 <div class="category">Driving Course</div>
                                 <div class="date">Oct 17, 2020</div>
                                 <div class="comment"><i class="far fa-comments"></i>46</div>
-                            </div>
-                            <h4><a href="#">Here's What to Expect for Your First In-Car Driving Lesson</a></h4>
-                            <div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>
+                            </div>--}}
+                            <h4><a href="#">Plan 1</a></h4>
+                            <p class="text">
+                            Ideal para quienes desean aprender los fundamentos de la conducción. Incluye clases prácticas donde aprenderás control del vehículo, manejo seguro, señales de tránsito y técnicas básicas para desenvolverte con confianza en la vía.
+                            </p>
+                            <!--<div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>-->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 news-block">
                     <div class="inner-box">
-                        <div class="image"><img src="{{ asset('images/resource/news-2.jpg')}}" alt=""></div>
+                        <div class="image"><img src="{{ asset('images/plan2.jpg')}}" alt=""></div>
                         <div class="lower-content">
-                            <div class="post-meta-info">
+                            <!--<div class="post-meta-info">
                                 <div class="category">Driving Course</div>
                                 <div class="date">Oct 15, 2020</div>
                                 <div class="comment"><i class="far fa-comments"></i>21</div>
-                            </div>
-                            <h4><a href="#">When You Start Learning To <br> Drive, It Can Be A Little Tuff </a></h4>
-                            <div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>
+                            </div>-->
+                            <h4><a href="#">Plan 2</a></h4>
+                            <p class="text">Pensado para quienes ya tienen conocimientos básicos pero desean mejorar su técnica. Este plan refuerza maniobras importantes como parqueo, control en pendientes, giros, y conducción en diferentes situaciones de tránsito.</p>
+                            <!--<div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>-->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 news-block">
                     <div class="inner-box">
-                        <div class="image"><img src="{{ asset('images/resource/news-3.jpg')}}" alt=""></div>
+                        <div class="image"><img src="{{ asset('images/plan4.jpg')}}" alt=""></div>
                         <div class="lower-content">
-                            <div class="post-meta-info">
+                            <!--<div class="post-meta-info">
                                 <div class="category">Driving Course</div>
                                 <div class="date">Oct 12, 2020</div>
                                 <div class="comment"><i class="far fa-comments"></i>29</div>
-                            </div>
-                            <h4><a href="#">Take Driving lessons with a private tutor</a></h4>
-                            <div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>
+                            </div>-->
+                            <h4><a href="#">Plan 3</a></h4>
+                            <p class="text">Especializado para quienes están próximos a realizar la prueba práctica de COSEVI. Practicarás en un plantel réplica del circuito de examen, simulando exactamente las condiciones reales para aumentar tus probabilidades de aprobar.</p>
+                            <!--<div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>-->
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
-    </section> --}}
+    </section>
 
 @endsection

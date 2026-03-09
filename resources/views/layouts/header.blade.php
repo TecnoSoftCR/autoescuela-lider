@@ -43,13 +43,13 @@
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation">
                                     <li><a href="{{route('index')}}">Inicio</a></li>
-                                    <li class="dropdown"><a href="#">Planes</a>
-                                        <ul>
+                                    <li class="dropdown"><a href="#planes">Planes</a>
+                                        <!--<ul>
                                             <li><a href="#">Paquete #1</a></li>
                                             <li><a href="#">Paquete #2</a></li>
                                             <li><a href="#">Paquete #3</a></li>
                                             <li><a href="#">Paquete #4</a></li>
-                                        </ul>
+                                        </ul>-->
                                     </li>
                                     <li><a href="{{route('reservar')}}">Reservar clase</a></li>
                                     <li><a href="#">Nosotros</a></li>
