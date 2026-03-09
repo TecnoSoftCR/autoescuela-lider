@@ -105,7 +105,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section pt-0">
+    <section class="about-section pt-0 pb-0">
         <div class="auto-container">
             <div class="row">
                 <div class="col-lg-6">
@@ -148,7 +148,7 @@
         </div>
     </section> --}}
 
-    <section class="driving-info-section">
+    <section class="driving-info-section" id="nosotros">
         <div class="traffic-cone" data-parallax='{"y": 30}'><img src="{{ asset('images/resource/image-8.jpg')}}" alt=""></div>
         <div class="auto-container">
             <div class="row">

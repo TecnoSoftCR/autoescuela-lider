@@ -7,7 +7,7 @@
                 <!--Column-->
                 <div class="column col-lg-3 col-md-6">
                     <div class="widget about-widget">
-                        <div class="logo"><a href="#"><img src="{{ asset('images/logo.png')}}" alt=""></a></div>
+                        <div class="logo"><a href="#"><img src="{{ asset('images/logo.png')}}" alt="Logo"></a></div>
                         <div class="text">La escuela de manejo líder del país.</div>
                         <ul class="social-links">
                             {{-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> --}}
@@ -42,12 +42,12 @@
                 <!--Column-->
                 <div class="column col-lg-3 col-md-6">
                     <div class="widget links-widget">
-                        <h3 class="widget-title">Cursos</h3>
+                        <h3 class="widget-title">Planes</h3>
                         <div class="widget-content">
                             <ul>
-                                <li><a href="#">Aprenda a conducir paso a paso</a></li>
-                                <li><a href="#">Curso de conducción en carretera</a></li>
-                                <li><a href="#">Lecciones en carro automático</a></li>
+                                <li><a href="#">Plan #1</a></li>
+                                <li><a href="#">Plan #2</a></li>
+                                <li><a href="#">Plan #3</a></li>
                             </ul>
                         </div>
                     </div>

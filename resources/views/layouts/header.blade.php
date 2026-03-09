@@ -52,8 +52,8 @@
                                         </ul>-->
                                     </li>
                                     <li><a href="{{route('reservar')}}">Reservar clase</a></li>
-                                    <li><a href="#">Nosotros</a></li>
-                                    <li><a href="#">Contacto</a></li>
+                                    <li><a href="#nosotros">Nosotros</a></li>
+                                    <!--<li><a href="#">Contacto</a></li>-->
                                 </ul>
                             </div>
                         </nav>

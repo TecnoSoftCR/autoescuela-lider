@@ -3226,7 +3226,7 @@ img {
 .consult-form {
     margin-bottom: 30px;
     background: #fff;
-    padding: 70px 55px 55px;
+    padding: 50px; /* 70px 55px 55px */
     right: -30px;
     position: relative;
 }
