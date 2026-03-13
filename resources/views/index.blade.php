@@ -10,10 +10,10 @@
                     <div class="content-outer">
                         <div class="content-box justify-content-center">
                             <div class="inner text-center">
-                                <h1>Aprenda a conducir con seguridad, <br> apruebe su prueba de manejo</h1>
+                                <h1>Conduzca seguro. Obtenga su licencia</h1>
                                 <div class="text"><b>Te preparamos para tu licencia con plantel tipo COSEVI y acompañamiento hasta el examen.</b></div>
                                 <div class="link-box">
-                                    <a href="{{route('reservar')}}" class="theme-btn btn-style-one"><span>Reservar clase</span></a>
+                                    <a href="{{route('reserva.create')}}" class="theme-btn btn-style-one"><span>Reservar clase</span></a>
                                     <!--<a href="#" class="theme-btn btn-style-one style-two"><span>Ver cursos</span></a>-->
                                 </div>
                             </div>
@@ -25,10 +25,10 @@
                     <div class="content-outer">
                         <div class="content-box justify-content-center">
                             <div class="inner text-center">
-                                <h1>Aprenda a conducir con seguridad, <br> apruebe su prueba de manejo</h1>
+                                <h1>Conduzca seguro. Obtenga su licencia</h1>
                                 <div class="text"><b>Te preparamos para tu licencia con plantel tipo COSEVI y apoyo hasta el examen.</b></div>
                                 <div class="link-box">
-                                    <a href="{{route('reservar')}}" class="theme-btn btn-style-one"><span>Reservar clase</span></a>
+                                    <a href="{{route('reserva.create')}}" class="theme-btn btn-style-one"><span>Reservar clase</span></a>
                                     <!--<a href="#" class="theme-btn btn-style-one style-two"><span>Ver cursos</span></a>-->
                                 </div>
                             </div>
@@ -129,7 +129,7 @@
                         <div class="bottom-content">
                             {{-- <h4>¡Reserve su clase hoy!</h4> --}}
                             <div class="contact-number">
-                                <a href="{{route('reservar')}}"><i class="fa fa-arrow-right"></i>Reservar clase</a>
+                                <a href="{{route('reserva.create')}}"><i class="fa fa-arrow-right"></i>Reservar clase</a>
                             </div>
                         </div>
                     </div>
@@ -516,8 +516,8 @@
         </div>
     </section>--}}
 
-    <!-- Blog Section -->
-    <section class="blog-section" id="planes">
+    <section class="driving-courses-section-two">
+        {{-- <div class="sec-bg" style="background-image: url({{asset('images/background/bg-5.jpg')}});"></div> --}}
         <div class="auto-container">
             <div class="top-content row m-0 justify-content-between align-items-center">
                 <div class="sec-title">
@@ -525,59 +525,45 @@
                     <h2>Auto Escuela Líder</h2>
                 </div>
                 <div class="text">En nuestra escuela de manejo ofrecemos planes diseñados para adaptarse <br>
-                a cada tipo de estudiante, desde principiantes hasta personas que desean <br>
-                perfeccionar su conducción antes del examen práctico.</div>
+                    a cada tipo de estudiante, desde principiantes hasta personas que desean <br>
+                    perfeccionar su conducción antes del examen práctico.</div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 news-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="{{ asset('images/plan1.jpg')}}" alt=""></div> <!-- images/resource/news-1.jpg -->
-                        <div class="lower-content">
-                            {{--<div class="post-meta-info">
-                                <div class="category">Driving Course</div>
-                                <div class="date">Oct 17, 2020</div>
-                                <div class="comment"><i class="far fa-comments"></i>46</div>
-                            </div>--}}
-                            <h4><a href="#">Plan 1</a></h4>
-                            <p class="text">
-                            Ideal para quienes desean aprender los fundamentos de la conducción. Incluye clases prácticas donde aprenderás control del vehículo, manejo seguro, señales de tránsito y técnicas básicas para desenvolverte con confianza en la vía.
-                            </p>
-                            <!--<div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 news-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="{{ asset('images/plan2.jpg')}}" alt=""></div>
-                        <div class="lower-content">
-                            <!--<div class="post-meta-info">
-                                <div class="category">Driving Course</div>
-                                <div class="date">Oct 15, 2020</div>
-                                <div class="comment"><i class="far fa-comments"></i>21</div>
-                            </div>-->
-                            <h4><a href="#">Plan 2</a></h4>
-                            <p class="text">Pensado para quienes ya tienen conocimientos básicos pero desean mejorar su técnica. Este plan refuerza maniobras importantes como parqueo, control en pendientes, giros, y conducción en diferentes situaciones de tránsito.</p>
-                            <!--<div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 news-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="{{ asset('images/plan4.jpg')}}" alt=""></div>
-                        <div class="lower-content">
-                            <!--<div class="post-meta-info">
-                                <div class="category">Driving Course</div>
-                                <div class="date">Oct 12, 2020</div>
-                                <div class="comment"><i class="far fa-comments"></i>29</div>
-                            </div>-->
-                            <h4><a href="#">Plan 3</a></h4>
-                            <p class="text">Especializado para quienes están próximos a realizar la prueba práctica de COSEVI. Practicarás en un plantel réplica del circuito de examen, simulando exactamente las condiciones reales para aumentar tus probabilidades de aprobar.</p>
-                            <!--<div class="link-btn"><a href="#" class="theme-btn btn-style-one style-three"><span>Read Full Story</span></a></div>-->
-                        </div>
-                    </div>
-                </div>
+            <div class="outer-box">
+                <div class="row">
+                    @forelse ($paquetes as $pqs)
+                        <div class="col-lg-4 course-block">
+                            <div class="inner-box">
+                                <div class="image"><img src="{{asset('images/resource/image-3.jpg')}}" alt=""></div>
+                                <div class="lower-content">
+                                    <h4><a href="#">{{$pqs['descripcion_paq']}}</a></h4>
+                                    <div class="text">
+                                        @forelse($pqs['lista_paquete'] as $item)
+                                            {{$item['descripcion_paq_lista']}}<br>
+                                            @empty
 
-
+                                        @endforelse
+                                    </div>
+                                    <div class="course-info">
+                                        {{-- <div class="instructor">
+                                            <div class="thumb"><img src="{{asset('images/resource/author-1.jpg')}}" alt=""></div>
+                                            <h5>James Thomas</h5>
+                                            <div class="designation">Instructor</div>
+                                        </div> --}}
+                                        <div class="price w-100">
+                                            {{-- <div class="thumb"><img src="{{asset('images/resource/image-6.jpg')}}" alt=""></div> --}}
+                                            <h4>₡ {{$pqs['precio_paq']}}</h4>
+                                        </div>
+                                    </div>
+                                    {{-- <div class="link-btn">
+                                        <a href="highway-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    @empty
+                    
+                    @endforelse
+                </div>
             </div>
         </div>
     </section>

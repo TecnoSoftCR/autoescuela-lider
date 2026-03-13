@@ -1,15 +1,10 @@
 <?php
 
+use App\Http\Controllers\InicioController;
+use App\Http\Controllers\ReservaController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+Route::get('/', [InicioController::class, 'index'])->name('index');
 
-Route::get('/reservar', function () {
-    return view('reservar');
-})->name('reservar');
-
-Route::post('/reservar', function () {
-    
-})->name('reservar.store');
+Route::get('/reservar', [ReservaController::class, 'create'])->name('reserva.create');
+Route::post('/reservar', [ReservaController::class, 'store'])->name('reserva.post');

@@ -11,15 +11,15 @@
                         <li><i class="pe-7s-clock text-white"></i>Horario flexible</li>
                     </ul>
                 </div>
-                <!--<div class="right-column">
+                <div class="right-column">
                     <ul class="social-icon">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/autoescuelaliderdemanejo/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <!--<li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <!--<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>-->
                     </ul>
-                </div>-->
+                </div>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
                                             <li><a href="#">Paquete #4</a></li>
                                         </ul>-->
                                     </li>
-                                    <li><a href="{{route('reservar')}}">Reservar clase</a></li>
+                                    <li><a href="{{route('reserva.create')}}">Reservar clase</a></li>
                                     <li><a href="#nosotros">Nosotros</a></li>
                                     <!--<li><a href="#">Contacto</a></li>-->
                                 </ul>

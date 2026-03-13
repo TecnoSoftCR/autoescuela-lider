@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Auto-escuela Líder</title>
+<title>Auto-Escuela Líder</title>
 <!-- Stylesheets -->
 <link href="{{ asset('css/bootstrap.css')}}" rel="stylesheet">
 <link href="{{ asset('css/style.css')}}" rel="stylesheet">
@@ -63,8 +63,8 @@
 <script src="{{ asset('js/jquery.polyglot.language.switcher.js')}}"></script>
 <script src="{{ asset('js/jquery.ajaxchimp.min.js')}}"></script>
 <script src="{{ asset('js/parallax-scroll.js')}}"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="{{ asset('js/script.js')}}"></script>
-
+@stack('scripts')
 </body>
 </html>

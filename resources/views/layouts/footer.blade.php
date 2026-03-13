@@ -3,7 +3,6 @@
         <!--Widgets Section-->
         <div class="widgets-section">
             <div class="row clearfix">
-
                 <!--Column-->
                 <div class="column col-lg-3 col-md-6">
                     <div class="widget about-widget">
@@ -11,7 +10,7 @@
                         <div class="text">La escuela de manejo líder del país.</div>
                         <ul class="social-links">
                             {{-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> --}}
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.facebook.com/autoescuelaliderdemanejo/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             {{-- <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> --}}
                             {{-- <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li> --}}
@@ -22,7 +21,7 @@
 
                 <!--Column-->
                 <div class="column col-lg-3 col-md-6">
-                    {{-- <div class="widget newsletter-widget">
+                    {{--<div class="widget newsletter-widget">
                         <h3 class="widget-title">Newsletter Signup</h3>
                         <div class="widget-content">
                             <div class="text">Enter your email address to get latest <br> updates and offers from us.</div>
@@ -36,7 +35,7 @@
                                 </form>
                             </div>
                         </div>
-                    </div> --}}
+                    </div>--}}
                 </div>
 
                 <!--Column-->
@@ -45,9 +44,11 @@
                         <h3 class="widget-title">Planes</h3>
                         <div class="widget-content">
                             <ul>
-                                <li><a href="#">Plan #1</a></li>
-                                <li><a href="#">Plan #2</a></li>
-                                <li><a href="#">Plan #3</a></li>
+                                @forelse ($paquetes as $pqs)
+                                    <li><a href="#">{{$pqs['descripcion_paq']}}</a></li>
+                                @empty
+
+                                @endforelse
                             </ul>
                         </div>
                     </div>
@@ -76,7 +77,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -86,16 +86,15 @@
         <div class="auto-container">
             <div class="wrapper-box">
                 <div class="copyright">
-                    <div class="text">&copy; {{date('Y')}} Auto-Escuela Líder.</div>
+                    <div class="text">&copy; {{date('Y')}} <a href="https://www.tecnosoftts.com/" rel="refer" class="text-white">Tecnosoft</a>.</div>
                 </div>
-                {{-- <div class="footer-menu">
+                {{--<div class="footer-menu">
                     <ul>
                         <li><a href="#">Sitemap </a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                     </ul>
-                </div> --}}
+                </div>--}}
             </div>
         </div>
     </div>
-
 </footer>

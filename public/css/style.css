@@ -626,7 +626,7 @@ img {
 }
 
 .header-top .social-icon li a {
-    color: #fff;
+    color: #fff !important;
     transition: .5s;
 }
 
@@ -742,7 +742,6 @@ img {
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-
 
 .main-menu .navigation>li.current:before {
     opacity: 1;
@@ -1835,7 +1834,7 @@ img {
     flex-wrap: wrap;
     align-items: center;
 
-    /*background: rgba(10, 10, 10, 0.25);*/
+    background: rgba(10, 10, 10, 0.1);
     /*backdrop-filter: blur(6px);*/
     /*-webkit-backdrop-filter: blur(6px);*/
     /*border-radius: 24px;*/
@@ -2980,7 +2979,7 @@ img {
 
 .course-block .course-info .price,
 .course-block .course-info .instructor {
-    position: relative;
+    position: relativece;
     width: 50%;
 }
 
@@ -3047,7 +3046,7 @@ img {
 
 .driving-info-section {
     position: relative;
-    padding: 120px 0 70px;
+    padding: 70px 0 70px; /* 120px 0px 70px */
 }
 
 .driving-info-section .traffic-cone {
@@ -3204,6 +3203,10 @@ img {
     margin-bottom: 30px;
 }
 
+.list-paquete li {
+    color: #000;
+}
+
 .info-form-section .list li {
     position: relative;
     margin-bottom: 6px;
@@ -3290,6 +3293,7 @@ img {
 }
 
 .consult-form .form-group textarea,
+.consult-form .form-group select,
 .consult-form .form-group input {
     width: 100%;
     background-color: #fff;
