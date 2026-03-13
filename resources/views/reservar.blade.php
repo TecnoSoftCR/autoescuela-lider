@@ -12,7 +12,7 @@
                             <div class="sub-title">Inscríbete en tus clases hoy</div>
                             <h2>Agendar cita</h2>
                         </div>
-                        <div class="text mb-30">Da el primer paso para obtener tu licencia de conducir. Agenda hoy tu cita con nuestros instructores y comienza a practicar en un plantel réplica tipo COSEVI, diseñado para que llegues al examen con confianza y seguridad.</div>
+                        <div class="text mb-30">Da el primer paso para obtener tu licencia de conducir. Agenda hoy tu cita con nuestros instructores y comienza a practicar en el plantel réplica de ciudad vial, diseñado para que llegues al examen con confianza y seguridad.</div>
                         <ul class="list">
                             <li>Reserva en línea</li>
                             <li>Paquetes de formación completos</li>
@@ -80,7 +80,7 @@
 
                                     <select name="paquete" class="form-select @error('paquete') is-invalid @enderror">
                                         @foreach($paquetes as $pqs)
-                                            <option value="{{$pqs['idpaq']}}">{{$pqs['descripcion_paq']}} - {{$pqs['precio_paq']}}</option>
+                                            <option value="{{$pqs['idpaq']}}">{{$pqs['descripcion_paq']}} - @formatoDinero($pqs['precio_paq'])</option>
                                         @endforeach
                                     </select>
                                     @error("paquete")

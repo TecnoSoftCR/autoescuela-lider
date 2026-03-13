@@ -73,7 +73,7 @@ class ReservaController extends Controller{
             $icon = 'warning';
         }
 
-        return redirect()->action([ReservaController::class, 'index'])->with(['msg' => $msg, 'icon' => $icon]);
+        return redirect()->action([ReservaController::class, 'create'])->with(['msg' => $msg, 'icon' => $icon]);
 
     }
 
