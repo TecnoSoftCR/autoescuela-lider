@@ -36,6 +36,11 @@ class ReservarCita extends Component {
         $this->servicios = $listaPaquetes['servicios'];
         $this->paquetes  = $listaPaquetes['paquetes'];
         $this->lista     = $listaPaquetes['lista'];
+
+        if (!empty($this->horarios)) {
+            $this->horario = $this->horarios[0]['horario'];
+        }
+
     }
 
     // Se ejecuta cada vez que cambia el servicio seleccionado
@@ -54,6 +59,7 @@ class ReservarCita extends Component {
 
         $this->validate([
             'fecha'                => ['required', 'date_format:Y-m-d'],
+            'horario'              => ['required'],
             'cedula'               => ['required', 'max:20'],
             'nombre'               => ['required', 'max:100'],
             'telefono'             => ['required', 'string', 'max:20'],
@@ -93,7 +99,7 @@ class ReservarCita extends Component {
             'correo'   => $this->correo,
             'paquete'  => $this->paquete,
         ]);
-    
+        
         // MOSTRAR MENSAJE
         $msg  = 'Su reserva fue registrada, le estaremos contactando.';
         $icon = 'success';

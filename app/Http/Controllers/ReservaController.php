@@ -27,6 +27,8 @@ class ReservaController extends Controller {
         //VALIDAR EL PAQUETE
         $paquete = ApiRequests::getPaquete($request->paquete);
 
+        dd($paquete);
+
         if(!isset($paquete['idpaq'])) {
             throw ValidationException::withMessages(['paquete' => 'El paquete no es válido.']);
         }

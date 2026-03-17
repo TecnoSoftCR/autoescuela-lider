@@ -43,7 +43,8 @@
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation">
                                     <li><a href="{{route('index')}}">Inicio</a></li>
-                                    <li class="dropdown"><a href="#planes">Planes</a>
+                                    <li><a href="{{route('reserva.create')}}">Reservar clase</a></li>
+                                    <li class="dropdown"><a href="{{ url('/#planes') }}">Planes</a>
                                         <!--<ul>
                                             <li><a href="#">Paquete #1</a></li>
                                             <li><a href="#">Paquete #2</a></li>
@@ -51,8 +52,8 @@
                                             <li><a href="#">Paquete #4</a></li>
                                         </ul>-->
                                     </li>
-                                    <li><a href="{{route('reserva.create')}}">Reservar clase</a></li>
-                                    <li><a href="#nosotros">Nosotros</a></li>
+                                    <li><a href="{{ url('/#nosotros') }}">Nosotros</a></li>
+                                    <li><a href="{{ url('/#contacto') }}">Contacto</a></li>
                                     <!--<li><a href="#">Contacto</a></li>-->
                                 </ul>
                             </div>

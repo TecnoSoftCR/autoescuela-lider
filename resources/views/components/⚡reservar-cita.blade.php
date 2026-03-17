@@ -8,7 +8,7 @@
     </div>
 
     <div class="form-group col-md-12 mb-3">
-        <select class="form-select @error('horario') is-invalid @enderror" wire:model.defer="horario">
+        <select class="form-select @error('horario') is-invalid @enderror" wire:model="horario">
             @forelse ($horarios as $h)
                 <option>{{ $h['horario'] }}</option>
             @empty

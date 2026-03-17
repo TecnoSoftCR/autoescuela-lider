@@ -1,4 +1,4 @@
-<footer class="main-footer" style="background-image: url({{ asset('images/background/bg-1.jpg')}});">
+<footer class="main-footer" id="contacto" style="background-image: url({{ asset('images/background/bg-1.jpg')}});">
     <div class="auto-container">
         <!--Widgets Section-->
         <div class="widgets-section">

@@ -89,6 +89,7 @@ a {
 .driving-courses-section .project-tab .project-tab-btns .p-tab-btn:hover, 
 .driving-courses-section .project-tab .project-tab-btns .p-tab-btn.active-btn {
     color: #12097c;
+    /* text-shadow: 0 0 px rgba(255, 255, 255, 0.6); */
 }
 
 .driving-courses-section .owl-theme .owl-nav .owl-prev:hover:after,

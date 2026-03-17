@@ -15,6 +15,7 @@
 
 <link rel="shortcut icon" href="{{ asset('images/favicon.png')}}" type="image/x-icon">
 <link rel="icon" href="{{ asset('images/favicon.png')}}" type="image/x-icon">
+@stack('links')
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
