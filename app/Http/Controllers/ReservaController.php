@@ -6,23 +6,15 @@ use App\Helpers\ApiRequests;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 
-class ReservaController extends Controller{
-    
-    public function create(){
+class ReservaController extends Controller {
 
-        $paquetes = ApiRequests::getPaquetes();
-        $horarios = ApiRequests::getHorarios();
-        
-        return view('reservar', [
-            'paquetes' => $paquetes,
-            'horarios' => $horarios
-        ]);    
+    public function create() {
+        return view('reservar');
 
     }
 
-    public function store(Request $request){
-
-        //VALIDAR INPUTS
+    public function store(Request $request) {
+        // VALIDAR INPUTS
         $request->validate([
             'fecha' => ['required', 'date_format:Y-m-d'],
             'cedula' => ['required', 'max:20'],
@@ -35,7 +27,7 @@ class ReservaController extends Controller{
         //VALIDAR EL PAQUETE
         $paquete = ApiRequests::getPaquete($request->paquete);
 
-        if(!isset($paquete['idpaq'])){
+        if(!isset($paquete['idpaq'])) {
             throw ValidationException::withMessages(['paquete' => 'El paquete no es válido.']);
         }
 

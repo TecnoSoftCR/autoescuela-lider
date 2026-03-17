@@ -64,7 +64,7 @@
                             <div class="icon"><span class="fas fa-phone-volume"></span></div>
                             <div class="content">
                                 <h5>Contáctenos</h5>
-                                <h4><a href="tel:+5067040-0506">7040-0506</a></h4>
+                                <h4><a href="https://wa.me/50670400506?text=Hola,%20quiero%20reservar%20una%20clase" target="_blank" rel="noopener noreferrer">7040-0506</a></h4>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                                 <div class="icon"><span class="fas fa-phone-volume"></span></div>
                                 <div class="content">
                                     <h5>Contáctenos</h5>
-                                    <h4><a href="tel:+5067040-0506">7040-0506</a></h4>
+                                    <h4><a href="https://wa.me/50670400506?text=Hola,%20quiero%20reservar%20una%20clase" target="_blank" rel="noopener noreferrer">7040-0506</a></h4>
                                 </div>
                             </div>
                         </div>

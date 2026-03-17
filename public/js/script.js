@@ -1,5 +1,5 @@
 (function($) {
-	
+
 	"use strict";
 
 
@@ -13,11 +13,11 @@
 				var width = ($(window).width() - 1200),
 					margin = (width / 2);
 				$(".industries-covered .outer-box").css("margin-right", margin);
-			}			
+			}
 		}
 	}
 	marginClc();
-	
+
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
 		if($('.loader-wrap').length){
@@ -31,7 +31,7 @@
 	}
 
 	//Event Countdown Timer
-	if($('.time-countdown').length){  
+	if($('.time-countdown').length){
 		$('.time-countdown').each(function() {
 		var $this = $(this), finalDate = $(this).data('countdown');
 		$this.countdown(finalDate, function(event) {
@@ -61,16 +61,16 @@
                 $(this).addClass('current');
             }
         });
-        // if no file name return 
+        // if no file name return
         if ('' == FileName) {
             selector.find('li').eq(0).addClass('current');
         }
     }
 
-    // dynamic current class        
+    // dynamic current class
     let mainNavUL = $('.main-menu').find('.navigation');
     dynamicCurrentMenuClass(mainNavUL);
-	
+
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
 		if($('.main-header').length){
@@ -89,7 +89,7 @@
 			}
 		}
 	}
-	
+
 	headerStyle();
 
 	//Submenu Dropdown Toggle
@@ -154,14 +154,14 @@
 				posY += (mouseY - posY) / 9;
 
 				TweenMax.set(follower, {
-					css: { 
+					css: {
 						left: posX - 22,
 						top: posY - 22
 					}
 				});
 
 				TweenMax.set(cursor, {
-					css: { 
+					css: {
 						left: mouseX,
 						top: mouseY
 					}
@@ -207,11 +207,11 @@
 			preservenativescrolling: true,
 			cursordragontouch: true
 		});
-		
+
 		var mobileMenuContent = $('.main-header .nav-outer .main-menu').html();
 		$('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
 		$('.sticky-header .main-menu').append(mobileMenuContent);
-		
+
 		//Dropdown Button
 		$('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
 			$(this).toggleClass('open');
@@ -230,7 +230,7 @@
 
 	//Sidemenu Nav Hide Show
 	if($('.side-menu').length){
-		
+
 		$(".side-menu .menu-box").niceScroll({
 			cursorborder: "none",
 			cursorborderradius: "0px",
@@ -242,7 +242,7 @@
 			preservenativescrolling: true,
 			cursordragontouch: true
 		});
-		
+
 		//Dropdown Button
 		$('.side-menu li.dropdown .dropdown-btn').on('click', function() {
 			$(this).toggleClass('open');
@@ -270,10 +270,10 @@
 			$('body').removeClass('side-menu-visible-s2');
 		});
 	}
-	
+
 	//Search Popup
 	if($('#search-popup').length){
-		
+
 		//Show Popup
 		$('.search-toggler').on('click', function() {
 			$('#search-popup').addClass('popup-visible');
@@ -289,11 +289,11 @@
 		});
 	}
 
-	// Testimonial 
+	// Testimonial
 	var galleryThumbs = new Swiper('.testimonial-thumbs', {
 		loop: false,
 		spaceBetween: 10,
-		slidesPerView: 3,
+		slidesPerView: 3, // 3
 		initialSlide: 1,
 		freeMode: true,
 		speed: 1400,
@@ -307,7 +307,7 @@
 	var totalSlides = $(".swiper-container").length;
 	var galleryTop = new Swiper('.testimonial-content', {
 		spaceBetween: 10,
-		slidesPerView: 1,
+		slidesPerView: 1, // 1
 		mousewheel: true,
 		autoplay: {
 			delay: 5000,
@@ -328,9 +328,9 @@
        $(".languages ul").show();
     })
 	$(".languages ul").mouseleave(function(){
-	    $(".languages ul").hide(); 
+	    $(".languages ul").hide();
 	});
-   
+
 	$(".languages li a").click(function(){
        $(".languages li a").removeClass('sel');
        $(this).addClass('sel');
@@ -383,8 +383,8 @@
 			$( "input.property-amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
 			}
 		});
-		
-		$( "input.property-amount" ).val( $( ".price-range-slider" ).slider( "values", 0 ) + " - $" + $( ".price-range-slider" ).slider( "values", 1 ) );	
+
+		$( "input.property-amount" ).val( $( ".price-range-slider" ).slider( "values", 0 ) + " - $" + $( ".price-range-slider" ).slider( "values", 1 ) );
 	}
 
 	// Lazyload Images
@@ -395,11 +395,11 @@
 			threshold: 300
 		});
 	}
-	
+
 	/////////////////////////////
 		//Universal Code for All Owl Carousel Sliders
 	/////////////////////////////
-	
+
 	if ($('.theme_carousel').length) {
 			$(".theme_carousel").each(function (index) {
 			var $owlAttr = {},
@@ -408,7 +408,7 @@
 			$(this).owlCarousel($owlAttr);
 		});
 	}
-	
+
 	// Donation Progress Bar
 	if ($('.count-bar').length) {
 		$('.count-bar').appear(function(){
@@ -425,15 +425,15 @@
 		  verticalbuttons: true
 		});
 	}
-	
+
 	//Fact Counter + Text Count
 	if($('.count-box').length){
 		$('.count-box').appear(function(){
-	
+
 			var $t = $(this),
 				n = $t.find(".count-text").attr("data-stop"),
 				r = parseInt($t.find(".count-text").attr("data-speed"), 10);
-				
+
 			if (!$t.hasClass("counted")) {
 				$t.addClass("counted");
 				$({
@@ -451,16 +451,16 @@
 					}
 				});
 			}
-			
+
 		},{accY: 0});
 	}
-	
+
 	//Tabs Box
 	if($('.tabs-box').length){
 		$('.tabs-box .tab-buttons .tab-btn').on('click', function(e) {
 			e.preventDefault();
 			var target = $($(this).attr('data-tab'));
-			
+
 			if ($(target).is(':visible')){
 				return false;
 			}else{
@@ -473,18 +473,18 @@
 			}
 		});
 	}
-	
+
 	//Accordion Box
 	if($('.accordion-box').length){
 		$(".accordion-box").on('click', '.acc-btn', function() {
-			
+
 			var outerBox = $(this).parents('.accordion-box');
 			var target = $(this).parents('.accordion');
-			
+
 			if($(this).hasClass('active')!==true){
 				$(outerBox).find('.accordion .acc-btn').removeClass('active');
 			}
-			
+
 			if ($(this).next('.acc-content').is(':visible')){
 				return false;
 			}else{
@@ -492,11 +492,11 @@
 				$(outerBox).children('.accordion').removeClass('active-block');
 				$(outerBox).find('.accordion').children('.acc-content').slideUp(300);
 				target.addClass('active-block');
-				$(this).next('.acc-content').slideDown(300);	
+				$(this).next('.acc-content').slideDown(300);
 			}
-		});	
+		});
 	}
-	
+
 
 	//LightBox / Fancybox
 	if($('.lightbox-image').length) {
@@ -523,7 +523,7 @@
 					easing: 'linear'
 				}
 			});
-			// Isotope Filter 
+			// Isotope Filter
 			$filter.find('li').on('click', function() {
 				var selector = $(this).attr('data-filter');
 				try {
@@ -561,20 +561,20 @@
 			$container.isotope("on", "layoutComplete", function(a, b) {
                 var a = b.length,
                 pcn = $(".filters .count");
-                pcn.html(a);                
-            }); 
+                pcn.html(a);
+            });
 		}
 	}
 	sortableMasonry();
 
 
-	// Testimonial 
+	// Testimonial
 	if ($('.testimonial-carousel').length) {
 		var testimonialThumb = new Swiper('.testimonial-thumbs', {
 			preloadImages: false,
             loop: true,
             speed: 2400,
-            slidesPerView: 3,
+            slidesPerView: 3, // 3
             centeredSlides: true,
             spaceBetween: 0,
             effect: "slide",
@@ -589,9 +589,9 @@
             thumbs: {
                 swiper: testimonialThumb
             }
-			
+
 		});
-		
+
 	}
 
 	//Projects Tabs
@@ -599,7 +599,7 @@
 		$('.project-tab .project-tab-btns .p-tab-btn').on('click', function(e) {
 			e.preventDefault();
 			var target = $($(this).attr('data-tab'));
-			
+
 			if ($(target).hasClass('actve-tab')){
 				return false;
 			}else{
@@ -612,7 +612,7 @@
 	}
 
 
-	// Single Image Carousel 
+	// Single Image Carousel
 	if ($('.single-image-carousel').length) {
 		var productThumbs = new Swiper('.single-image-carousel', {
 			preloadImages: false,
@@ -638,7 +638,7 @@
 		$('.project-tab .project-tab-btns .p-tab-btn').on('click', function(e) {
 			e.preventDefault();
 			var target = $($(this).attr('data-tab'));
-			
+
 			if ($(target).hasClass('actve-tab')){
 				return false;
 			}else{
@@ -654,7 +654,7 @@
 	function isotopeBlock() {
 		if($(".isotope-block").length){
 			var $grid = $('.isotope-block').isotope();
-	
+
 		}
 	}
 
@@ -697,9 +697,9 @@
 	    };
 	}
 
-	
 
-	
+
+
 	// Elements Animation
 	if($('.wow').length){
 		var wow = new WOW(
@@ -723,7 +723,7 @@
 /* ==========================================================================
    When document is Resize, do
    ========================================================================== */
-	
+
 	$(window).on('resize', function() {
 		marginClc();
 	});
@@ -731,20 +731,20 @@
 /* ==========================================================================
    When document is Scrollig, do
    ========================================================================== */
-	
+
    jQuery(window).on('scroll', function() {
 		headerStyle();
 	});
-	
+
 /* ==========================================================================
    When document is loading, do
    ========================================================================== */
-	
+
    jQuery(window).on('load', function() {
 		handlePreloader();
 		sortableMasonry();
 		isotopeBlock();
-		bannerSlider();		
-	});	
+		bannerSlider();
+	});
 
 })(window.jQuery);

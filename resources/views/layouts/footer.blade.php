@@ -44,11 +44,11 @@
                         <h3 class="widget-title">Planes</h3>
                         <div class="widget-content">
                             <ul>
-                                @forelse ($paquetes as $pqs)
+                                {{-- @forelse ($paquetes as $pqs)
                                     <li><a href="#">{{$pqs['descripcion_paq']}}</a></li>
                                 @empty
 
-                                @endforelse
+                                @endforelse --}}
                             </ul>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                 </li>
                                 <li>
                                     <div class="icon"><span class="fas fa-phone-volume"></span></div>
-                                    <div class="text"><a href="tel:+50670400506">7040-0506</a>
+                                    <div class="text"><a href="https://wa.me/50670400506?text=Hola,%20quiero%20reservar%20una%20clase" target="_blank" rel="noopener noreferrer">7040-0506</a>
                                     </div>
                                 </li>
                                 <li>
@@ -86,7 +86,7 @@
         <div class="auto-container">
             <div class="wrapper-box">
                 <div class="copyright">
-                    <div class="text">&copy; {{date('Y')}} <a href="https://www.tecnosoftts.com/" rel="refer" class="text-white">Tecnosoft</a>.</div>
+                    <div class="text">&copy; {{date('Y')}} Desarrollado por <a href="https://www.tecnosoftts.com/" rel="refer" class="text-white">Tecnosoft Tecnología en Software</a>.</div>
                 </div>
                 {{--<div class="footer-menu">
                     <ul>
