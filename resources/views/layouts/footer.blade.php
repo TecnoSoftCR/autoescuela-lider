@@ -39,20 +39,20 @@
                 </div>
 
                 <!--Column-->
-                <div class="column col-lg-3 col-md-6">
+                {{-- <div class="column col-lg-3 col-md-6">
                     <div class="widget links-widget">
                         <h3 class="widget-title">Planes</h3>
                         <div class="widget-content">
                             <ul>
-                                {{-- @forelse ($paquetes as $pqs)
+                                @forelse ($paquetes as $pqs)
                                     <li><a href="#">{{$pqs['descripcion_paq']}}</a></li>
                                 @empty
 
-                                @endforelse --}}
+                                @endforelse
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <!--Column-->
                 <div class="column col-lg-3 col-md-6">
