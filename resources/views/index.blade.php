@@ -164,7 +164,7 @@
     </section>
     <!-- PLANES -->
 
-    <section class="driving-info-section mb-0" id="nosotros">
+    <section class="driving-info-section mt-0 mb-0" id="nosotros">
         <div class="traffic-cone" data-parallax='{"y": 30}'><img src="{{ asset('images/resource/image-8.jpg')}}" alt=""></div>
         <div class="auto-container">
             <div class="row">

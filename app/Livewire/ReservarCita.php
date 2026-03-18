@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Helpers\ApiRequests;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 
 class ReservarCita extends Component {
@@ -99,6 +100,8 @@ class ReservarCita extends Component {
             'correo'   => $this->correo,
             'paquete'  => $this->paquete,
         ]);
+
+        Log::warning($store);
         
         // MOSTRAR MENSAJE
         $msg  = 'Su reserva fue registrada, le estaremos contactando.';

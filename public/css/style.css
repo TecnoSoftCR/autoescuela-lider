@@ -3060,7 +3060,7 @@ img {
 
 .driving-info-section {
     position: relative;
-    padding: 70px 0 70px; /* 120px 0px 70px */
+    padding: 0px 0 70px; /* 120px 0px 70px */
 }
 
 .driving-info-section .traffic-cone {
@@ -7489,4 +7489,54 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* PLANES */
+/* Igualar altura de todas las cards */
+.driving-courses-section .owl-stage {
+    display: flex;
+}
+
+.driving-courses-section .owl-item {
+    display: flex;
+    height: auto;
+}
+
+.driving-courses-section .course-block {
+    width: 100%;
+    height: 100%;
+}
+
+.driving-courses-section .course-block .inner-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.driving-courses-section .course-block .image img {
+    width: 100%;
+    height: 220px; /* ajuste este valor si quiere la imagen más alta o más baja */
+    object-fit: cover;
+    display: block;
+}
+
+.driving-courses-section .course-block .lower-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.driving-courses-section .course-block .course-info {
+    margin-top: auto;
+}
+
+/* Opcional: dar mejor presentación a la lista */
+.driving-courses-section .course-block .lower-content ul {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+/* Opcional: hace que el título no descuadre tanto */
+.driving-courses-section .course-block .lower-content h4 {
+    min-height: 48px;
 }
